@@ -12,7 +12,10 @@ struct APIConfig: Decodable {
     let tmdbAPIKey: String
     
     static let shared: APIConfig = {
-        guard let url = Bundle.main.url(forResource: "APIConfig", withExtension: "json") else {
+        guard let url = Bundle.main.url(
+            forResource: "APIConfig",
+            withExtension: "json"
+        ) else {
             fatalError("APIConfig.json is missing or invalid.")
         }
         
