@@ -18,3 +18,4 @@ struct Title: Decodable, Identifiable {
     var overview: String?
     var posterPath: String?
 }
+
