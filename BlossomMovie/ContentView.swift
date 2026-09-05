@@ -4,6 +4,10 @@
 //
 //  Created by Joel Guerra on 8/22/26.
 //
+/*
+this file here is basically the central hub for our application. this will be where we pretty much connect
+ all of our views together for the applicaton!
+ */
 
 import SwiftUI
 
