@@ -19,7 +19,7 @@ class ViewModel {
     private let dataFetcher = DataFetcher()
     var trendingMovies: [Title] = []
     
-    func getTitle() async {
+    func getTitles() async {
         homeStatus = .fetching
         
         do {
