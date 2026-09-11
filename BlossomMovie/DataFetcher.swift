@@ -41,6 +41,8 @@ struct DataFetcher {
         
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        return try decoder.decode(APIObject.self, from: data).results
+        var titles = try decoder.decode(APIObject.self, from: data).results // this allows us to modify the data before returning it. now we can run our posterPathURL function to it so that we can return the correct URLs from this
+        Constants.addPosterPath(to: &titles) // the & tells Swift to modify the actual array
+        return titles
     }
 }
