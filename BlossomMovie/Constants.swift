@@ -3,12 +3,13 @@
 //  BlossomMovie
 //
 //  Created by Joel Guerra on 8/22/26.
-//
+//  this is where i will place my contants for the project
 
 import Foundation
 import SwiftUI
 
 struct Constants {
+    
     static let homeString = "Home"
     static let upcomingString = "Upcoming"
     static let searchString = "Search"

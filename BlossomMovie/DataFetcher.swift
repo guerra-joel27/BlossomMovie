@@ -13,6 +13,7 @@ struct DataFetcher {
     
     // https://api.themoviedb.org/3/trending/movie/day?api_key=YOUR_API_KEY
     // https://api.themoviedb.org/3/movie/top_rated?api_key=YOUR_API_KEY
+    
     func fetchTitles(for media:String, by type: String) async throws -> [Title] {
         
         let fetchTitlesURL = try buildURL(media: media, type: type)
