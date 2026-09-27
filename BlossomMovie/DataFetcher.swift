@@ -23,7 +23,8 @@ struct DataFetcher {
         
         print(fetchTitlesURL)
         
-        let(data, urlResponse) = try await URLSession.shared.data(from: fetchTitlesURL)
+        let(data, _) = try await URLSession.shared.data(from: fetchTitlesURL)
+        // i replaced urlResponse with _ to silence warning
 
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
