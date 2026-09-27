@@ -15,16 +15,16 @@ struct ContentView: View {
     var body: some View {
         TabView {
             Tab(Constants.homeString, systemImage: Constants.homeIconString) {
-                HomeView()
+                HomeView() // as of 9/27/26, this is the only one we have done out of the four
             }
             Tab(Constants.upcomingString, systemImage: Constants.upcomingIconString) {
-                Text(Constants.upcomingString)
+                Text(Constants.upcomingString) // placeholder!
             }
             Tab(Constants.searchString, systemImage: Constants.searchIconString) {
-                Text(Constants.searchString)
+                Text(Constants.searchString) // placeholder!
             }
             Tab(Constants.downloadString, systemImage: Constants.downloadIconString) {
-                Text(Constants.downloadString)
+                Text(Constants.downloadString) // placeholder!
             }
         }
     }
