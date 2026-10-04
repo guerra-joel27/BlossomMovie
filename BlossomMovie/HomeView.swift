@@ -12,13 +12,14 @@ struct HomeView: View {
     let viewModel = ViewModel()
     
     var body: some View {
-        GeometryReader { geo in
+        GeometryReader { geo in 
             ScrollView(.vertical) {
                 switch viewModel.homeStatus {
                 case .notStarted:
                     EmptyView()
                 case .fetching:
                     ProgressView()
+                        .frame(width: geo.size.width, height: geo.size.height)
                 case .success:
                     LazyVStack {
                         AsyncImage(url: URL(string: heroTestTitle)) { image in
