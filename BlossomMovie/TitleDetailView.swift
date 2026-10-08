@@ -2,7 +2,7 @@
 //  TitleDetailView.swift
 //  BlossomMovie
 //
-//  Created by Joel Guerra on 10/4/26.
+//  Created by Joel Guerra on 10/4/26..
 //
 
 import SwiftUI
